@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "b" {
-  bucket = format("dweintraub-hack2022-%s", var.name)
+  bucket = format("dweintraub-hack2022-%s", var.bucket_suffix)
 
   tags = {
-    Name        = var.name
+    Instance    = var.bucket_suffix
     Environment = "hack"
   }
 }

@@ -1,4 +1,4 @@
-variable "bucket_name" {
+variable "bucket_suffix" {
   type        = string
-  description = "The name of the bucket"
+  description = "The suffix of the bucket"
 }
